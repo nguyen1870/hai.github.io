@@ -13,7 +13,7 @@
 
 <h2>HTML Forms</h2>
 
-<form action="/action_page.php">
+<form action="/action_page.php" id="signup-form">
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname" value="John"><br>
   <label for="lname">Last name:</label><br>
@@ -22,7 +22,15 @@
 </form> 
 
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+--------------------------------------------------->
+<script type="text/javascript">
+var form = document.getElementById('signup-form');
 
+analytics.trackForm(form, 'Signed Up', {
+  plan: 'Premium',
+  revenue: 99.00
+});
+</script>
 </body>
 </html>
 
