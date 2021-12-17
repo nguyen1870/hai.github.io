@@ -24,11 +24,9 @@
 <p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
 --------------------------------------------------->
 <script type="text/javascript">
-var form = document.getElementById('signup-form');
-
-analytics.trackForm(form, 'Signed Up', {
-  plan: 'Premium',
-  revenue: 99.00
+analytics.identify('f4ca124298', {
+  name: 'Michael Brown',
+  email: 'mbrown@example.com'
 });
 </script>
 </body>
